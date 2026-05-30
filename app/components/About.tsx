@@ -39,7 +39,7 @@ const About: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                 whileInView={{opacity: 1, scale: 1}}
                 transition={{duration: 0.6}}
             >
-                <Image src={assets.user_image} alt='user image' className='w-full rounded-3xl'/> 
+                <Image src={assets.kp_user_image} alt='user image' className='w-full rounded-3xl'/> 
             </motion.div>
 
             <motion.div className='flex-1'

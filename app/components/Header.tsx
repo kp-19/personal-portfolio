@@ -16,7 +16,7 @@ const Header: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
             whileInView={{scale: 1}}
             transition={{duration: 0.8, type: 'spring', stiffness: 100}}
         >
-            <Image src={assets.profile_img} alt='' className='rounded-full w-32'/>
+            <Image src={assets.kp_profile_img} alt='' className='rounded-full w-32'/>
         </motion.div>
 
         <motion.h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'
