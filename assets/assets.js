@@ -115,7 +115,7 @@ export const workData = [
         description: 'Unity-based 3D survival adventure with procedural islands, ship bouyancy mechanics, enemies, and exploration mechanics.',
         tags: ['Unity', 'C#'],
         link: 'https://github.com/kp-19/CG_course_project',
-        bgImage: '/work-3.png',
+        bgImage: '/project-3.jpeg',
     },
     {
         title: 'ColorSense',
