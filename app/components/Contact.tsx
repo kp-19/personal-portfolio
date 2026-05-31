@@ -59,10 +59,10 @@ const Contact: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.5, delay: 0.7}}
         >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, 
-            deserunt alias autem aperiam,
-            cum doloribus nulla, illo qui unde natus dolores? Quas pariatur ea 
-            aperiam asperiores deleniti, cum doloremque voluptate.
+            I'm always open to discussing new opportunities, 
+            interesting projects, research collaborations, 
+            or simply connecting with like-minded people. 
+            Feel free to reach out, and I'll get back to you as soon as possible.
         </motion.p>
 
         <motion.form onSubmit={onSubmit} className='max-w-2xl mx-auto'

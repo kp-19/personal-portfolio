@@ -29,12 +29,12 @@ const About: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
         >
             About Me</motion.h2>
 
-        <motion.div className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'
+        <motion.div className='flex w-full flex-col lg:flex-row items-center gap-20 my-8'
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.8}}
         >
-            <motion.div className='w-64 sm:w-80 rounded-3xl max-w-none'
+            <motion.div className='w-64 sm:w-80 rounded-3xl max-w-none lg:mb-35'
                 initial={{opacity: 0 , scale: 0.9}}
                 whileInView={{opacity: 1, scale: 1}}
                 transition={{duration: 0.6}}
@@ -47,13 +47,21 @@ const About: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.6, delay: 0.8}}    
             >
-                <p className='mb-10 max-w-2xl font-ovo'>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-                    earum distinctio perferendis rerum voluptatibus quos! Atque, soluta aut. 
-                    Dolores tempora quia officiis eveniet, quisquam ducimus nam reprehenderit odit? Eius, maxime!
+                <p className='mb-5 max-w-2xl font-ovo'>
+                    Hello! I'm a Computer Science graduate and Software Engineer
+                    with experience building software solutions.
+                    I enjoy solving challenging problems, learning new technologies, and
+                    turning ideas into practical applications. My 
+                    interests include software engineering, machine learning, and Computer Vision.
                 </p>
 
-                <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'
+                <p className='mb-5 max-w-2xl font-ovo'>
+                    Outside of technology, I am an aspiring musician who enjoys expressing creativity 
+                    through music. Both engineering and music inspire my passion
+                    for learning, creativity, and continuous improvement.
+                </p>
+
+                <motion.ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mb-25'
                     initial={{opacity: 0}}
                     whileInView={{opacity: 1}}
                     transition={{duration: 0.8, delay: 1}}    
@@ -67,12 +75,12 @@ const About: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                         >
                             <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3'/>
                             <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                            <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                            <p className='text-gray-600 text-sm dark:text-white/80 whitespace-pre-line'>{description}</p>
                         </motion.li>
                     ))}
                 </motion.ul>
 
-                <motion.h4 className='my-6 text-gray-700 font-ovo dark:text-white/80'
+                {/* <motion.h4 className='my-6 text-gray-700 font-ovo dark:text-white/80'
                     initial={{opacity: 0 , y: 20}}
                     whileInView={{opacity: 1, y: 0}}
                     transition={{duration: 0.5, delay: 1.3}}
@@ -91,7 +99,7 @@ const About: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                             <Image src={tool} alt='Tool' className='w-5 sm:w-7' />
                         </motion.li>
                     ))}
-                </motion.ul>
+                </motion.ul> */}
             </motion.div>
         </motion.div>
     </motion.div>

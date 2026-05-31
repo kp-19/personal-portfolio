@@ -47,8 +47,8 @@ const Navbar: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
               ${isScroll ? "" : " bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"}`}>
                 <li><a className='font-ovo' href="#top">Home</a></li>
                 <li><a className='font-ovo' href="#about">About Me</a></li>
-                <li><a className='font-ovo' href="#services">Services</a></li>
-                <li><a className='font-ovo' href="#work">My Work</a></li>
+                <li><a className='font-ovo' href="#skills">Skills</a></li>
+                <li><a className='font-ovo' href="#projects">Projects</a></li>
                 <li><a className='font-ovo' href="#contact">Contact Me</a></li>
             </ul>
 
@@ -75,8 +75,8 @@ const Navbar: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                 </div>
                 <li><a className='font-ovo' onClick={closeMenu} href="#top">Home</a></li>
                 <li><a className='font-ovo' onClick={closeMenu} href="#about">About Me</a></li>
-                <li><a className='font-ovo' onClick={closeMenu} href="#services">Services</a></li>
-                <li><a className='font-ovo' onClick={closeMenu} href="#work">My Work</a></li>
+                <li><a className='font-ovo' onClick={closeMenu} href="#skills">Skills</a></li>
+                <li><a className='font-ovo' onClick={closeMenu} href="#projects">Projects</a></li>
                 <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contact Me</a></li>
             </ul>
 

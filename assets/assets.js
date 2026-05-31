@@ -3,8 +3,8 @@ import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
-import project_icon from './project-icon.png';
-import project_icon_dark from './project-icon-dark.png';
+import star_icon from './star-icon.png';
+import star_icon_dark from './star-icon-dark.png';
 import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
@@ -15,7 +15,7 @@ import kp_logo from './kp_logo.png';
 import kp_logo_dark from './kp_logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import kp_profile_img from './kp_profile_img.png';
+import kp_profile_img from './kp_profile_img.jpeg';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -36,6 +36,27 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import bg_img from './bg_img.jpg'
+import loc_icon from './loc-icon.png'
+import loc_icon_dark from './loc-icon-dark.png'
+import c_icon from './skills-icons/c.png'
+import cplusplus_icon from './skills-icons/c++.svg'
+import python_icon from './skills-icons/python.svg'
+import sql_icon from './skills-icons/sql.svg'
+import java_icon from './skills-icons/java.svg'
+import anaconda_icon from './skills-icons/anaconda.svg'
+import docker_icon from './skills-icons/docker.svg'
+import firebase_icon from './skills-icons/firebase.svg'
+import gcp_icon from './skills-icons/gcp.svg'
+import opencv_icon from './skills-icons/opencv.svg'
+import pytorch_icon from './skills-icons/pytorch.svg'
+import springboot_icon from './skills-icons/spring-boot.svg'
+import postman_icon from './skills-icons/postman.svg'
+import unity_icon from './skills-icons/unity.svg'
+import git_icon from './skills-icons/git.svg'
+import github_icon from './skills-icons/GitHub.svg'
+import fl_icon from './skills-icons/fl.png'
+import filmora_icon from './skills-icons/filmora.png'
+import canva_icon from './skills-icons/canva.png'
 
 export const assets = {
     kp_user_image,
@@ -43,8 +64,8 @@ export const assets = {
     code_icon_dark,
     edu_icon,
     edu_icon_dark,
-    project_icon,
-    project_icon_dark,
+    star_icon,
+    star_icon_dark,
     vscode,
     firebase,
     figma,
@@ -75,43 +96,65 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    bg_img
+    bg_img,
+    loc_icon,
+    loc_icon_dark,
+    github_icon
 };
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Sentiment Analysis',
+        description: 'Twitter sentiment analysis using purely classical machine learning techniques and analysis using multiple tokenizers(BERT and TF-ID).',
+        tags: ['Python', 'ML', 'Scikit-Learn'],
+        link: 'https://github.com/kp-19/CSL2050-Course-Project',
+        bgImage: '/project-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Ocean and Island Exploration Game',
+        description: 'Unity-based 3D survival adventure with procedural islands, ship bouyancy mechanics, enemies, and exploration mechanics.',
+        tags: ['Unity', 'C#'],
+        link: 'https://github.com/kp-19/CG_course_project',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        title: 'ColorSense',
+        description: 'A flutter based application to help color-blind people sense color with the help of color labelling of images and color blindness simulator.',
+        tags: ['Flutter', 'OpenCV'],
+        link: 'https://github.com/kp-19/sw-project-colorsense',
+        bgImage: '/project-2.jpeg',
     },
 ]
 
-export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+
+export const skillsData = [
+    {
+        icons: [c_icon, cplusplus_icon, python_icon, java_icon, sql_icon],
+        icons_description: ['C', 'C++', 'Python', 'Java', 'SQL'],
+        title: 'Languages'
+    },
+    {
+        icons: [springboot_icon, pytorch_icon, opencv_icon, firebase_icon, git_icon],
+        icons_description: ['SpringBoot', 'PyTorch', 'OpenCV', 'Firebase', 'Git'],
+        title: 'Frameworks & Technologies'
+    },
+    {
+        icons: [anaconda_icon, docker_icon, gcp_icon, postman_icon, unity_icon],
+        icons_description: ['Anaconda', 'Docker', 'GCP', 'Postman', 'Unity'],
+        title: 'Tools'
+    },
+    {
+        icons: [fl_icon, filmora_icon, canva_icon],
+        icons_description: ['fl studio', 'Filmora', 'Canva'],
+        title: 'Other Software'
+    },
 ]
 
+
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
+    { icon: assets.loc_icon, iconDark: assets.loc_icon_dark, title: 'Location', description: 'Pune,\nMaharashtra' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.star_icon, iconDark: assets.star_icon_dark, title: 'Interests', description: 'Software Engineering, AI, Research, Music, Badminton'}
 ];
 
 export const toolsData = [
