@@ -38,6 +38,8 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import bg_img from './bg_img.jpg'
 import loc_icon from './loc-icon.png'
 import loc_icon_dark from './loc-icon-dark.png'
+import yt_dp from './yt_dp.jpg'
+
 import c_icon from './skills-icons/c.png'
 import cplusplus_icon from './skills-icons/c++.svg'
 import python_icon from './skills-icons/python.svg'
@@ -57,6 +59,13 @@ import github_icon from './skills-icons/GitHub.svg'
 import fl_icon from './skills-icons/fl.png'
 import filmora_icon from './skills-icons/filmora.png'
 import canva_icon from './skills-icons/canva.png'
+import vscode_icon from './skills-icons/vscode.svg'
+
+import badminton_icon from './interests-icons/badminton.png'
+import piano_icon from './interests-icons/piano.png'
+import bassguitar_icon from './interests-icons/bass-guitar.png'
+import japanese_icon from './interests-icons/japanese.png'
+
 
 export const assets = {
     kp_user_image,
@@ -99,8 +108,15 @@ export const assets = {
     bg_img,
     loc_icon,
     loc_icon_dark,
-    github_icon
+    github_icon,
+    yt_dp
 };
+
+export const infoList = [
+    { icon: assets.loc_icon, iconDark: assets.loc_icon_dark, title: 'Location', description: 'Pune,\nMaharashtra' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.star_icon, iconDark: assets.star_icon_dark, title: 'Interests', description: 'Software Engineering, AI, Research, Music, Badminton'}
+];
 
 export const workData = [
     {
@@ -139,8 +155,8 @@ export const skillsData = [
         title: 'Frameworks & Technologies'
     },
     {
-        icons: [anaconda_icon, docker_icon, gcp_icon, postman_icon, unity_icon],
-        icons_description: ['Anaconda', 'Docker', 'GCP', 'Postman', 'Unity'],
+        icons: [anaconda_icon, docker_icon, gcp_icon, postman_icon, unity_icon, vscode_icon],
+        icons_description: ['Anaconda', 'Docker', 'GCP', 'Postman', 'Unity', 'VSCode'],
         title: 'Tools'
     },
     {
@@ -150,13 +166,22 @@ export const skillsData = [
     },
 ]
 
+export const interestsData = [
+    {
+        icon: piano_icon,
+        description: 'Keyboard'
+    },
+    {
+        icon: bassguitar_icon,
+        description: 'Guitar/bass'
+    },
+    {
+        icon: badminton_icon,
+        description: 'Badminton'
+    },
+    {
+        icon: japanese_icon,
+        description: 'Japanese'
+    },
+]
 
-export const infoList = [
-    { icon: assets.loc_icon, iconDark: assets.loc_icon_dark, title: 'Location', description: 'Pune,\nMaharashtra' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.star_icon, iconDark: assets.star_icon_dark, title: 'Interests', description: 'Software Engineering, AI, Research, Music, Badminton'}
-];
-
-export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
-];

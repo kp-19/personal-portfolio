@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Interests from "./components/Interests";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -40,6 +41,7 @@ export default function Home() {
       <About isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       <Skills isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       <Projects isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Interests isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       <Contact isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       <Footer isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
       </>

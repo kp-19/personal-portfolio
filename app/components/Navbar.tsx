@@ -49,6 +49,7 @@ const Navbar: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                 <li><a className='font-ovo' href="#about">About Me</a></li>
                 <li><a className='font-ovo' href="#skills">Skills</a></li>
                 <li><a className='font-ovo' href="#projects">Projects</a></li>
+                <li><a className='font-ovo' href="#interests">Interests</a></li>
                 <li><a className='font-ovo' href="#contact">Contact Me</a></li>
             </ul>
 
@@ -77,6 +78,7 @@ const Navbar: React.FC<DarkModeProps> = ({ isDarkMode, setIsDarkMode }) => {
                 <li><a className='font-ovo' onClick={closeMenu} href="#about">About Me</a></li>
                 <li><a className='font-ovo' onClick={closeMenu} href="#skills">Skills</a></li>
                 <li><a className='font-ovo' onClick={closeMenu} href="#projects">Projects</a></li>
+                <li><a className='font-ovo' onClick={closeMenu} href="#interests">Interests</a></li>
                 <li><a className='font-ovo' onClick={closeMenu} href="#contact">Contact Me</a></li>
             </ul>
 
